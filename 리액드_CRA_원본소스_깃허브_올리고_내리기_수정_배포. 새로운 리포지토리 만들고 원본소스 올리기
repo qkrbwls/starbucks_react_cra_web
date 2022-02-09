@@ -1,0 +1,64 @@
+1. 깃허브에 새로운 리포지토리 만들고 원본소스 올리기
+    starbucks_react_cra_src
+
+    https://github.com/qkrbwls/starbucks_react_cra_src.git
+
+
+git init
+git config user.name "qkrbwls"
+git config user.email "youjin_1202@naver.com"
+
+git remote remove origin
+git remote add origin https://github.com/qkrbwls/starbucks_react_cra_src.git
+git remote -v
+git add .
+git commit -m "리액트 CRA 수정 소스 스타벅스 웹제작"
+git push origin master
+
+2. 내려받기 수정 저장
+    다시 수정된 원본 올리기
+    cd E:/박유진/학습산출물/2022년02월/02_09/02_09_5_깃허브_리액트_CRA_내려받기_수정_다시올리기
+git clone https://github.com/qkrbwls/starbucks_react_cra_src.git
+
+
+git init
+git config user.name "qkrbwls"
+git config user.email "youjin_1202@naver.com"
+
+git remote remove origin
+git remote add origin https://github.com/qkrbwls/starbucks_react_cra_src.git
+git remote -v
+git add .
+git commit -m "리액트 CRA 수정 소스 스타벅스 웹제작"
+git push origin master
+
+
+
+3. starbucks_react_cra_web
+
+origin https://github.com/qkrbwls/starbucks_react_cra_web.git
+
+cd E:/박유진/학습산출물/2022년02월/02_09/02_09_6_깃허브_리액트_CRA_다시배포
+
+ls -la 로 노드모듈 없는것 확인
+
+npm i
+
+npm start 
+
+빌드하기
+npm run build
+
+package.json 수정하기
+  "homepage": "https://myusername.github.io/my-app",
+
+ 
+   "deploy": "gh-pages -d build",
+   "deploy": "gh-pages -b master -d build",
+
+
+gh-pages 설치
+
+deploy 하기 (배포)
+npm run deploy 
+
